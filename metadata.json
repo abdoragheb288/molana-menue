@@ -1,0 +1,8 @@
+{
+  "name": "Moulana Restaurant Ordering System",
+  "description": "A complete mobile ordering PWA and web-based merchant dashboard with real-time order tracking, menu CRUD management, and 80mm thermal receipt printing support for Moulana restaurant, with full right-to-left (RTL) Arabic interface support.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

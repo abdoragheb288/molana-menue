@@ -1,0 +1,104 @@
+{
+  "entities": {
+    "MenuItem": {
+      "title": "MenuItem",
+      "description": "A single menu item offered by the restaurant",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "The name of the menu item"
+        },
+        "price": {
+          "type": "number",
+          "description": "Price of the menu item"
+        },
+        "category": {
+          "type": "string",
+          "description": "Category (e.g., Platters, Sandwiches, Drinks)"
+        },
+        "description": {
+          "type": "string",
+          "description": "Description of the ingredients or details"
+        },
+        "imageUrl": {
+          "type": "string",
+          "description": "Image URL"
+        },
+        "availability": {
+          "type": "boolean",
+          "description": "Is this item currently available"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Creation timestamp"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Last design/price update timestamp"
+        }
+      },
+      "required": ["name", "price", "category", "description", "createdAt", "updatedAt"]
+    },
+    "Order": {
+      "title": "Order",
+      "description": "An order placed containing items, total amount, customer details and billing status",
+      "type": "object",
+      "properties": {
+        "customerName": {
+          "type": "string",
+          "description": "The name of the customer"
+        },
+        "phone": {
+          "type": "string",
+          "description": "Customer phone number"
+        },
+        "address": {
+          "type": "string",
+          "description": "Delivery address (ignored for Takeaway)"
+        },
+        "items": {
+          "type": "array",
+          "description": "Array of items, each having: id, name, price, quantity, notes"
+        },
+        "orderType": {
+          "type": "string",
+          "enum": ["Takeaway", "Delivery"],
+          "description": "Type of access: Takeaway or Delivery"
+        },
+        "status": {
+          "type": "string",
+          "enum": ["pending", "processing", "completed", "cancelled"],
+          "description": "Current status of the order"
+        },
+        "totalAmount": {
+          "type": "number",
+          "description": "Sum total of ordered items"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Creation timestamp"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Last update timestamp"
+        }
+      },
+      "required": ["customerName", "phone", "items", "orderType", "status", "totalAmount", "createdAt", "updatedAt"]
+    }
+  },
+  "firestore": {
+    "menu": {
+      "schema": "MenuItem",
+      "description": "The collection of menu items"
+    },
+    "orders": {
+      "schema": "Order",
+      "description": "The collection of incoming and historic orders"
+    }
+  }
+}
