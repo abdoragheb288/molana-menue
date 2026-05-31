@@ -24,6 +24,19 @@
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then((reg) => {
+              console.log('Moulana PWA Service Worker registered successfully:', reg.scope);
+            })
+            .catch((err) => {
+              console.error('Moulana Service Worker registration failed:', err);
+            });
+        });
+      }
+    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
