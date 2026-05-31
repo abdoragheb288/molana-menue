@@ -3,15 +3,16 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-const CACHE_NAME = 'moulana-restaurant-v3';
+const CACHE_NAME = 'moulana-restaurant-v4';
 const STATIC_ASSETS = [
   '/',
   '/index.html',
   '/manifest.json',
   '/logo.svg',
-  '/icon-192.png',
-  '/icon-512.png',
-  '/maskable-icon-512.png',
+  '/icons/icon-192.png',
+  '/icons/icon-512.png',
+  '/icons/maskable-icon-512.png',
+  '/icons/apple-touch-icon.png',
   '/screenshot-mobile.png',
   '/screenshot-desktop.png',
   'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap'
