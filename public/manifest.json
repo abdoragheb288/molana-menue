@@ -1,53 +1,41 @@
 {
-  "lang": "ar",
-  "dir": "rtl",
-  "name": "مطعم مولانا - طلب الجوال والمشويات الفورية",
-  "short_name": "مطعم مولانا",
-  "description": "تطبيق طلب الوجبات والمشويات الفورية من مطعم مولانا - المذاق الأصيل والجودة العالية للمأكولات",
   "id": "/?view=customer",
   "scope": "/",
   "start_url": "/?view=customer",
+  "name": "مطعم مولانا - طلب الجوال والمشويات الفورية",
+  "short_name": "مطعم مولانا",
+  "description": "تطبيق طلب الوجبات والمشويات الفورية من مطعم مولانا - المذاق الأصيل والجودة العالية للمأكولات",
+  "lang": "ar",
+  "dir": "rtl",
   "display": "standalone",
-  "background_color": "#F9F7F2",
-  "theme_color": "#141414",
   "orientation": "portrait",
+  "theme_color": "#141414",
+  "background_color": "#F9F7F2",
   "categories": [
     "food",
     "shopping"
   ],
-  "shortcuts": [
-    {
-      "name": "قسم طلب الوجبات العادية",
-      "url": "/?view=customer",
-      "description": "افتح التطبيق للطلب الفوري لأجود أنواع الكباب واللحوم"
-    },
-    {
-      "name": "لوحة تحكم المطبخ والمطعم",
-      "url": "/?view=admin",
-      "description": "شاشة المطبخ المخصصة لإدارة الطلبات والفواتير وطباعتها"
-    }
-  ],
   "icons": [
     {
-      "src": "https://img.icons8.com/color/192/barbecue.png",
+      "src": "/icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "https://img.icons8.com/color/192/barbecue.png",
+      "src": "/icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "https://img.icons8.com/color/512/barbecue.png",
+      "src": "/icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "https://img.icons8.com/color/512/barbecue.png",
+      "src": "/maskable-icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
@@ -55,18 +43,59 @@
   ],
   "screenshots": [
     {
-      "src": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&q=80&w=600&h=1200",
-      "sizes": "600x1200",
-      "type": "image/jpeg",
+      "src": "/screenshot-mobile.png",
+      "sizes": "540x960",
+      "type": "image/png",
       "form_factor": "narrow",
       "label": "جوال العميل - واجهة تصفح المأكولات والمشويات"
     },
     {
-      "src": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&q=80&w=1200&h=800",
-      "sizes": "1200x800",
-      "type": "image/jpeg",
+      "src": "/screenshot-desktop.png",
+      "sizes": "1200x675",
+      "type": "image/png",
       "form_factor": "wide",
-      "label": "تابلت المطعم - شاشة المطبخ لمتابعة وطباعة الفواتير"
+      "label": "شاشة المطبخ - لوحة التحكم بمتابعة وطباعة فواتير مولانا"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "قائمة الطعام والمشويات",
+      "short_name": "قائمة الطعام",
+      "url": "/?view=customer",
+      "description": "تصفح والطلب المباشر لأجود أنواع الكباب والكفتة والمشويات",
+      "icons": [
+        {
+          "src": "/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "سلة المشتريات والطلب",
+      "short_name": "السلة والطلب",
+      "url": "/?view=customer",
+      "description": "استعراض عربة التسوق وتأكيد الطلب الفوري لمشوياتك المفضلة",
+      "icons": [
+        {
+          "src": "/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "الطلبات والتحضير",
+      "short_name": "الطلبات",
+      "url": "/?view=admin",
+      "description": "لوحة تحكم إدارة الطلبات والمشويات للمطعم والمطبخ",
+      "icons": [
+        {
+          "src": "/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
     }
   ]
 }
